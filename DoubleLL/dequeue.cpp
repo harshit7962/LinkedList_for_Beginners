@@ -57,6 +57,7 @@ struct Dequeue {
         if(front==NULL) rear=NULL;
         else front->prev = NULL;
         delete temp;
+        size--;
     }
     
     void deleteRear() {
@@ -66,6 +67,7 @@ struct Dequeue {
         if(rear==NULL) front = NULL;
         else rear->next =NULL;
         delete temp;
+        size--;
     }
     
     bool isEmpty() {return size==0;}
