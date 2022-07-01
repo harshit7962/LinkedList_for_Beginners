@@ -1,4 +1,7 @@
 //Here we need to check if the ll is palindromic...
+/**
+Idea here is to reverse the ll from middle and then compare them for smoother traversal
+*/
 bool isPalindrome(ListNode* head) {
         if(head->next==NULL) return true;
         ListNode *middle=head, *tail=head;
